@@ -23,7 +23,7 @@ Full address plan: [docs/network.md](docs/network.md)
 
 | # | Project | Status |
 |---|---|---|
-| 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented (reboot test pending) |
+| 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented |
 | 02 | Phone screen streaming (Docker) | Planned |
 | 03 | Storage server / NAS (Samba) | Planned |
 | 04 | Backups (Proxmox Backup Server or vzdump) | Planned |
