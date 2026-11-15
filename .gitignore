@@ -1,0 +1,10 @@
+# Secrets and local files: never commit
+.env
+*.key
+*.pem
+*.log
+*.bak
+*password*
+*secret*
+.DS_Store
+Thumbs.db
