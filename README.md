@@ -54,21 +54,26 @@ homelab/
         └── docs/              <- LinkedIn carousel PDF
 ```
 
-## Adding a new project
+## Repo conventions
 
-1. Copy `docs/PROJECT_TEMPLATE.md` into `projects/NN-project-name/README.md`
-2. Add `configs/`, `scripts/` and `images/` as needed
-3. Add the project to the table above and to `docs/network.md`
-4. Log it in `CHANGELOG.md`
+Each new project follows the same steps:
+
+1. Copy `docs/PROJECT_TEMPLATE.md` to `projects/NN-project-name/README.md`.
+2. Add `configs/`, `scripts/` and `images/` as needed.
+3. Add the project to the table above and to `docs/network.md`.
+4. Log the change in `CHANGELOG.md`.
 
 ## Security
 
-No passwords, API keys, tokens or public IPs are committed. Screenshots are blurred before upload. See `.gitignore`.
+No passwords, API keys, tokens or public IPs are committed, and screenshots are blurred before upload. See [`.gitignore`](.gitignore) for excluded files.
 
 ## About
 
-Hanzallah | BS Data Science, UET Lahore | CCNA | Aspiring SOC Analyst
-Also see my [SOC Blue Team Lab](https://github.com/hanzallah-io/soc-blue-team-lab).
-LinkedIn: [https://www.linkedin.com/in/hanzallah-io]
+**Hanzallah** | BS Data Science, UET Lahore | CCNA | Aspiring SOC Analyst
 
-Licensed under MIT.
+Also see my [SOC Blue Team Lab](https://github.com/hanzallah-io/soc-blue-team-lab).
+Connect on [LinkedIn](https://www.linkedin.com/in/hanzallah-io).
+
+## License
+
+Licensed under the [MIT License](LICENSE).
