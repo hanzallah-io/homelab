@@ -23,6 +23,7 @@ Full address plan: [docs/network.md](docs/network.md)
 
 | # | Project | Status |
 |---|---|---|
+<<<<<<< HEAD
 | 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented (reboot test pending) |
 | 02 | [Storage server / NAS (Samba)](projects/02-nas-samba/) | Documented |
 | 03 | [Backups (vzdump to the NAS)](projects/03-backups/) | Documented |
@@ -32,6 +33,16 @@ Full address plan: [docs/network.md](docs/network.md)
 | 07 | Monitoring (Uptime Kuma, Grafana + Prometheus) | Planned |
 | 08 | Jellyfin | Planned |
 | 09 | Segmentation lab (OPNsense, isolated bridge) | Idea |
+=======
+| 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented |
+| 02 | Phone screen streaming (Docker) | Planned |
+| 03 | Storage server / NAS (Samba) | Planned |
+| 04 | Backups (Proxmox Backup Server or vzdump) | Planned |
+| 05 | Jellyfin media server | Planned |
+| 06 | Reverse proxy (Nginx Proxy Manager / Traefik) | Idea |
+| 07 | Monitoring (Uptime Kuma, Grafana + Prometheus) | Idea |
+| 08 | Remote access (WireGuard / Tailscale) | Idea |
+>>>>>>> origin/master
 
 More ideas: Nextcloud, Immich, Paperless-ngx, Syncthing, Second Pi-hole, Portainer, Homepage, Gitea, Home Assistant.
 
@@ -77,16 +88,30 @@ homelab/
         └── images/
 ```
 
+<<<<<<< HEAD
 [homelab-carousel-part2.docx](docs/carousels/part2/homelab-carousel-part2.docx)
+=======
+## Repo conventions
+
+Each new project follows the same steps:
+
+1. Copy `docs/PROJECT_TEMPLATE.md` to `projects/NN-project-name/README.md`.
+2. Add `configs/`, `scripts/` and `images/` as needed.
+3. Add the project to the table above and to `docs/network.md`.
+4. Log the change in `CHANGELOG.md`.
+>>>>>>> origin/master
 
 ## Security
 
-No passwords, API keys, tokens or public IPs are committed. Screenshots are blurred before upload. See `.gitignore`.
+No passwords, API keys, tokens or public IPs are committed, and screenshots are blurred before upload. See [`.gitignore`](.gitignore) for excluded files.
 
 ## About
 
-Hanzallah | BS Data Science, UET Lahore | CCNA | Aspiring SOC Analyst
-Also see my [SOC Blue Team Lab](https://github.com/hanzallah-io/soc-blue-team-lab).
-LinkedIn: [https://www.linkedin.com/in/hanzallah-io]
+**Hanzallah** | BS Data Science, UET Lahore | CCNA | Aspiring SOC Analyst
 
-Licensed under MIT.
+Also see my [SOC Blue Team Lab](https://github.com/hanzallah-io/soc-blue-team-lab).
+Connect on [LinkedIn](https://www.linkedin.com/in/hanzallah-io).
+
+## License
+
+Licensed under the [MIT License](LICENSE).
