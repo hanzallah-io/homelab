@@ -24,13 +24,14 @@ Full address plan: [docs/network.md](docs/network.md)
 | # | Project | Status |
 |---|---|---|
 | 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented (reboot test pending) |
-| 02 | Phone screen streaming (Docker) | Planned |
-| 03 | Storage server / NAS (Samba) | Planned |
-| 04 | Backups (Proxmox Backup Server or vzdump) | Planned |
-| 05 | Jellyfin media server | Planned |
-| 06 | Reverse proxy (Nginx Proxy Manager / Traefik) | Idea |
-| 07 | Monitoring (Uptime Kuma, Grafana + Prometheus) | Idea |
-| 08 | Remote access (WireGuard / Tailscale) | Idea |
+| 02 | [Storage server / NAS (Samba)](projects/02-nas-samba/) | Documented |
+| 03 | [Backups (vzdump to the NAS)](projects/03-backups/) | Documented |
+| 04 | [Reverse proxy + private CA](projects/04-reverse-proxy-local-ca/) | Documented |
+| 05 | [Remote access (Tailscale subnet router)](projects/05-remote-access-tailscale/) | Documented |
+| 06 | Wazuh agents feeding the SOC lab | Next |
+| 07 | Monitoring (Uptime Kuma, Grafana + Prometheus) | Planned |
+| 08 | Jellyfin | Planned |
+| 09 | Segmentation lab (OPNsense, isolated bridge) | Idea |
 
 More ideas: Nextcloud, Immich, Paperless-ngx, Syncthing, Second Pi-hole, Portainer, Homepage, Gitea, Home Assistant.
 
@@ -44,14 +45,36 @@ homelab/
 ├── CHANGELOG.md               <- dated log of every change
 ├── docs/
 │   ├── network.md             <- IP / VMID allocation table
-│   └── PROJECT_TEMPLATE.md    <- copy this for each new project
+│   ├── PROJECT_TEMPLATE.md    <- copy this for each new project
+│   └── carousels/
+│       ├── part1/             <- LinkedIn carousel: Part 1 (Proxmox + Pi-hole + Unbound)
+│       └── part2/             <- LinkedIn carousel: Part 2 (NAS, Backups, Reverse Proxy, Tailscale)
 └── projects/
-    └── 01-proxmox-pihole-unbound/
-        ├── README.md          <- full write-up (problems + fixes)
-        ├── configs/           <- sanitized config files
-        ├── scripts/           <- helper and health-check scripts
-        ├── images/            <- screenshots
-        └── docs/              <- LinkedIn carousel PDF
+    ├── 01-proxmox-pihole-unbound/
+    │   ├── README.md          <- full write-up (problems + fixes)
+    │   ├── configs/           <- sanitized config files
+    │   ├── scripts/           <- helper and health-check scripts
+    │   └── images/            <- screenshots
+    ├── 02-nas-samba/
+    │   ├── README.md
+    │   ├── configs/
+    │   ├── scripts/
+    │   └── images/
+    ├── 03-backups/
+    │   ├── README.md
+    │   ├── configs/
+    │   ├── scripts/
+    │   └── images/
+    ├── 04-reverse-proxy-local-ca/
+    │   ├── README.md
+    │   ├── configs/
+    │   ├── scripts/
+    │   └── images/
+    └── 05-remote-access-tailscale/
+        ├── README.md
+        ├── configs/
+        ├── scripts/
+        └── images/
 ```
 
 ## Adding a new project

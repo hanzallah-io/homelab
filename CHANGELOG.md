@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-21
+- Added NAS (CT 101), weekly backups to the NAS, reverse proxy with private CA (CT 102), Tailscale subnet router (CT 103)
+- Found ISP CGNAT; replaced the WireGuard plan with Tailscale
+
 ## Unreleased
 - Repo created with project 01 documentation, helper scripts and LinkedIn carousel
 

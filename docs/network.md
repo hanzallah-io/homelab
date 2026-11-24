@@ -8,7 +8,9 @@ Update this file whenever a service is added.
 | `hanzallah` | Proxmox VE 9.2.2 host | - | 192.168.1.50 | 8006 | Hypervisor |
 | `pihole` | LXC (Debian 12) | 100 | 192.168.1.60 | 53, 80 | DNS filtering |
 | Unbound | Service inside `pihole` | 100 | 127.0.0.1 | 5335 | Recursive resolver |
-| [next service] | | | | | |
+| `nas` | LXC (Debian 12) | 101 | 192.168.1.61 | 445 | Samba file server, data at /srv/nas |
+| `proxy` | LXC (Debian 12) | 102 | 192.168.1.62 | 80, 443 | nginx + private CA (*.lab) |
+| `tailscale` | LXC (Debian 12) | 103 | 192.168.1.63 | 41641/udp | Tailscale subnet router |
 
 ## DNS flow
 
