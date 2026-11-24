@@ -1,7 +1,8 @@
 # Secrets and local files: never commit
-.env
+_incoming/
 *.key
 *.pem
+*.env
 *.log
 *.bak
 *password*

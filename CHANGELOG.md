@@ -1,8 +1,9 @@
-# Changelog
-
-## 2026-11-21
-- Added NAS (CT 101), weekly backups to the NAS, reverse proxy with private CA (CT 102), Tailscale subnet router (CT 103)
-- Found ISP CGNAT; replaced the WireGuard plan with Tailscale
+## 2026-11-24
+- Added LinkedIn carousel (Part 2): NAS, Backups, Reverse Proxy, Tailscale
+- Documented projects 02-05 with screenshots: NAS, backups, reverse proxy, Tailscale
+- Updated root README with project links and carousel PDF
+- Updated docs/network.md with IP allocation table
+- Updated project READMEs with polished structure and "At a glance" tables
 
 ## Unreleased
 - Repo created with project 01 documentation, helper scripts and LinkedIn carousel
