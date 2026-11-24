@@ -39,7 +39,7 @@ vzdump 100 101 --storage nas-backup --mode snapshot --compress zstd
 ls -lh /srv/nas/pve-backups/dump/
 ```
 
-📸 SS: Backup files in /srv/nas/pve-backups/dump/ (`images/backup-files.png`)
+📸 SS: Backup files in /srv/nas/pve-backups/dump/ (`images/vzdump-output.png`)
 
 ## Phase 3: weekly schedule
 **Problem:** Need automated weekly backups.

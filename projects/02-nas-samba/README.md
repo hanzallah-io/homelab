@@ -30,7 +30,7 @@ df -h /srv/nas
 ```
 `nofail` stops a mount problem from blocking boot. Result: about 233 GB available on /srv/nas.
 
-📸 SS: `df -h /srv/nas` output (`images/storage-volume.png`)
+📸 SS: `df -h /srv/nas` output (`images/nas-volume.png`)
 
 ## Phase 2: container (Proxmox host)
 **Problem:** Need an unprivileged container with networking and nesting enabled for Samba.
@@ -49,7 +49,7 @@ pct create 101 local:vztmpl/debian-12-standard_12.12-1_amd64.tar.zst \
   --unprivileged 1 --features nesting=1 --onboot 1
 ```
 
-📸 SS: `pct config 101` output (`images/container-config.png`)
+📸 SS: `pct config 101` output (`images/ct101-config.png`)
 
 ## Phase 3: bind mount (Proxmox host)
 **Problem:** Container needs access to the host storage volume.
@@ -90,7 +90,7 @@ ls -ld /mnt/nas     # owner should be nas:nas
 ```
 The nas account is Samba-only (nologin shell), so it cannot log in at the console.
 
-📸 SS: `testparm -s` output (`images/samba-config.png`)
+📸 SS: `testparm -s` output (`images/testparm-nas.png`)
 
 ## Phase 5: connect from Windows
 **Verification:** Open File Explorer, enter `\\192.168.1.61\nas`, log in as `nas`.

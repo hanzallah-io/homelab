@@ -86,7 +86,7 @@ rm -f /etc/nginx/sites-enabled/default
 nginx -t && systemctl reload nginx
 ```
 
-📸 SS: `nginx -t` output and `systemctl status nginx` (`images/nginx-config.png`)
+📸 SS: `nginx -t` output and `systemctl status nginx` (`images/nginx-test.png`)
 
 ## Phase 4: local DNS
 **Problem:** Local clients need to resolve *.lab to the proxy IP.
