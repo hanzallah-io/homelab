@@ -39,7 +39,7 @@ flowchart LR
 
 | # | Project | Status |
 |---|---|---|
-| 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented (reboot test pending) |
+| 01 | [Proxmox + Pi-hole + Unbound](projects/01-proxmox-pihole-unbound/) | Documented |
 | 02 | [Storage server / NAS (Samba)](projects/02-nas-samba/) | Documented |
 | 03 | [Backups (vzdump to the NAS)](projects/03-backups/) | Documented |
 | 04 | [Reverse proxy + private CA](projects/04-reverse-proxy-local-ca/) | Documented |
